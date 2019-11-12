@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Grin</title>
+    <meta content="text/html">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- GoogleFonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS Main  -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- Katex -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="" crossorigin="anonymous"></script>
+  </head>
+
+
+    <header class="container">
+      <nav>
+  <ul class="nav-logo">
+    <li><a href=".">Grin</a></li>
+  </ul>
+  <ul class="nav-root">
+    <li>
+      <a href="https://github.com/mimblewimble/grin/releases">Releases</a>
+    </li>
+    <li>
+      <a href="https://github.com/mimblewimble/docs/wiki">Wiki</a>
+    </li>
+    <li>
+      <span class="dropdown" href="https://www.grin-forum.org/">
+        Community
+        <nav>
+          <span class="dropdown-heading">Everyone.</span>
+          <a href="https://grinnews.substack.com/">News</a>
+          <a href="https://www.grin-forum.org/">Forum</a>
+          <a href="https://gitter.im/grin_community/Lobby">Chat</a>
+        </nav>
+      </span>
+    </li>
+    <li>
+      <span class="dropdown" href="https://www.grin-forum.org/">
+        Guides
+        <nav>
+          <span class="dropdown-heading">Learn to use Grin</span>
+          <a href="https://github.com/mimblewimble/docs/wiki/how-to-run-a-grin-node">Running a node</code></a>
+          <a href="https://github.com/mimblewimble/docs/wiki/how-to-use-the-grin-wallet">Using the wallet</a>
+          <a href="https://github.com/mimblewimble/docs/wiki/how-to-mine-grin">Running a miner</a>
+        </nav>
+      </span>
+    </li>
+    <li>
+      <span class="dropdown" href="https://www.grin-forum.org/">
+        Learn more
+        <nav>
+          <span class="dropdown-heading">The Rabbit hole</span>
+          <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md">Grin Introduction</a>
+          <a href="https://github.com/mimblewimble/grin/blob/master/doc/pow/pow.md">Cuckoo cycle</a>
+          <a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md">Grin for Bitcoiners</a>
+          <a href="https://github.com/mimblewimble/docs/wiki/Grin-Privacy-Primer">Privacy in Grin</a>
+          <a href="https://github.com/mimblewimble/docs/wiki/Monetary-Policy">Monetary Policy</a>
+          <a href="https://github.com/mimblewimble/docs/wiki/Community-projects">Community projects</a>
+          <a href="funding.html">Community funding</a>
+          <a href="friends.html">Friends of Grin</a>
+        </nav>
+      </span>
+    </li>
+    <!-- <li><a href="/dev">Documentation</a></li> -->
+  </ul>
+  <ul class="nav-hamburger">
+    <button class="hamburger" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </ul>
+  <div>
+  </div>
+  <ul class="nav-mobile">
+    <div class="nav-mobile-fade">
+      <span class="nav-mobile-heading">Grin</span>
+      <li>
+        <a href=".">Home</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md">Introduction</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/releases">Releases</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/docs/wiki">Wiki</a>
+      </li>
+      <li>
+        <a href="https://www.grin-forum.org/">Forum</a>
+      </li>
+      <span class="nav-mobile-heading">Guides</span>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/blob/master/doc/build.md">Setup Grin</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/grin-miner/blob/master/README.md">Setup Grin Miner</a>
+      </li>
+      <span class="nav-mobile-heading">Learn more</span>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md">Grin Introduction</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/blob/master/doc/pow/pow.md">Cuckoo cycle</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md">Grin for Bitcoiners</a>
+      </li>
+      <li>
+        <a href="friends.html">Friends of Grin</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/docs/wiki/Community-projects">Community projects</a>
+      </li>
+      <li>
+        <a href="funding.html">Community funding</a>
+      </li>
+    </div>
+  </ul>
+</nav>
+
+    </header>
+    <main>
+  <section id="intro">
+    <header id="splash" class="container">
+      <div class="intro-logo">
+        <img src="grin_mw_logo.svg" class="grin-logo" alt="Description">
+      </div>
+      <div class="intro">
+        <div class="intro-text">
+          <h1>Meet Grin.</h1>
+          <p>
+            The private and lightweight<br/>
+            mimblewimble blockchain.
+          </p>
+        </div>
+        <div class="intro-buttons">
+          <a class="intro-button" href="https://github.com/mimblewimble/docs/wiki/Getting-Started-With-Grin%3A-Links-and-Resources">
+            Get started
+          </a>
+          <a class="intro-button" href="https://github.com/mimblewimble/grin">
+            Github
+            <i class="fab fa-github"></i>
+          </a>
+          <!-- <button class="intro-button" type="button">
+
+          </button> -->
+        </div>
+      </div>
+    </header>
+    <section id="status">
+      <span class="status-text">
+        Currently Live: mainnet
+      </span>
+      <span class="status-message">
+        Grin was launched on <a href="https://github.com/mimblewimble/grin/commit/8fc489a80868fcf12fcdbc0551528bb73fc891a0">Jan. 15th 2019</a>. It's very young and experimental. Use at your own risk!
+      </span>
+    </section>
+  </section>
+  <section id="primary">
+    <div class="primary-root">
+      <div class="pitch container">
+        <h2>What's Grin?</h2>
+        <p>Electronic transactions for all. Without censorship or restrictions.</p>
+        <p>Grin empowers anyone to transact or save modern money without the fear of external control or oppression. Grin is designed for the decades to come, not just tomorrow. Grin wants to be usable by everyone, regardless of borders, culture, skills or access.</p>
+      </div>
+      <hr class="primary-hr">
+      <div class="properties container">
+        <section class="property">
+          <div class="property-title">
+            <img src="privacy.svg">
+            <h3>Private</h3>
+          </div>
+          <p>Grin has no amounts and no addresses. Transactions can be trivially aggregated. To hide where a newly created transaction comes from, it gets relayed privately (a "random walk") among peers before it is publicly announced.</p>
+        </section>
+        <section class="property">
+          <div class="property-title">
+            <img src="scale.svg">
+            <h3>Scalable</h3>
+          </div>
+          <p>MimbleWimble leverages cryptography to allow most of the past transaction data to be removed. This guarantees Grin won't collapse under its own weight in the long term.</p>
+        </section>
+        <section class="property">
+          <div class="property-title">
+            <img src="nodes.svg">
+            <h3>Open</h3>
+          </div>
+          <p>Grin is developed openly, by developers distributed all over the world. It's not controlled by any company, foundation or individual. The coin distribution is designed to be as fair (but not gratis) as is known to be possible.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+  <section id="secondary">
+    <!-- <hr></hr> -->
+    <section class="funding">
+      <h2>Funding</h2>
+      <p>Grin is launched fairly — free of ICO, pre-mine or founder’s reward. We rely on donations to keep working on the project. Support the movement by purchasing some swag or making a donation.</p>
+      <!-- <span class="funding-amount">€440 of €55,000 Target</span>
+      <div class="funding-progress" style="width: 50%;"></div> -->
+      <!-- <div class="funding-progress-container"></div> -->
+      <a href="funding" class="funding-button">Donate to Grin</a>
+      <a href="friends.html" class="funding-friends">Friends of Grin</a>
+      <a href="https://tmgox.com/" class="funding-swag">Buy Swag</a>
+      <hr>
+    </section>
+    <section class="funding">
+      <h2>Patrons</h2>
+      <p>If you’re an individual, company or institution excited about the potential of Grin or MimbleWimble, we humbly ask if you’d consider making a financial contribution to the project’s development. We’re experimenting with a 100% community-driven funding model.</p>
+      <p>We sincerely thank all our past patrons for their support.</p>
+    </section>
+    <hr>
+    <section class="info">
+      <div class="container">
+        <h2>Contribute</h2>
+      </div>
+      <a href="https://github.com/mimblewimble/docs/wiki/Getting-Started-With-Grin%3A-Links-and-Resources">
+        <div class="info-box">
+          <h4>mainnet, Onwards!</h4>
+          <p>Grin mainnet was launched on Jan. 15 2019.</p>
+          <p>Get started here!</p>
+          <span class="info-learn-more">Learn more</span>
+        </div>
+      </a>
+      <a href="https://github.com/mimblewimble/grin/blob/master/doc/build.md">
+        <div class="info-box">
+          <h4>floonet, Upwards!</h4>
+          <p>Grin floonet is our official testnet. We need your help testing: either compile from the source or download the grin binary and join us.</p>
+          <span class="info-learn-more">Learn more</span>
+        </div>
+      </a>
+    </section>
+    <a href="https://github.com/mimblewimble">
+      <div class="info-banner" style="background-color: black;">
+        <h1 class="info-banner-text">Help make Grin better.</h1>
+        <img src="grin-logo-inverted-eyes.svg" class="info-grin-logo" alt="Description">
+      </div>
+    </a>
+  </section>
+</main>
+
+    <footer>
+  <div class="footer-root container-sm">
+    <section class="footer-section" style="flex-grow: 0;">
+      <img src="grin_mw_logo.svg" class="grin-logo-footer" alt="Description">
+    </section>
+    <section class="footer-section">
+      <strong><h4>Grin</h4></strong>
+      <div><a href="https://github.com/mimblewimble/grin/releases">Github</a></div>
+      <div><a href="https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt">Original Whitepaper</a></div>
+      <div><a href="https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.pdf">Andrew Poelstra's Whitepaper</a></div>
+      <div><a href="https://github.com/mimblewimble/grin/blob/master/SECURITY.md">Security and vulnerability policy</a></div>
+      <div><a href="friends.html">Friends of Grin</a></div>
+      <div><a href="visual.html">Logos</a></div>
+    </section>
+    <section class="footer-section">
+      <strong><h4>The Rabbit hole</h4></strong>
+      <div><a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md">Grin Introduction</a></div>
+      <div><a href="https://github.com/mimblewimble/grin/blob/master/doc/pow/pow.md">Cuckoo cycle</a></div>
+      <div><a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md">Grin for Bitcoiners</a></div>
+    </section>
+    <section class="footer-section" style="flex-grow: 6;">
+      <strong><h4>Community</h4></strong>
+      <div><a href="https://gitter.im/grin_community/Lobby">Gitter</a></div>
+      <div><a href="https://grinnews.substack.com/">News</a></div>
+      <div><a href="https://www.grin-forum.org/">Forum</a></div>
+      <div><a href="https://twitter.com/grincouncil">Twitter</a></div>
+      <div><a href="https://launchpad.net/~mimblewimble">Mailing List</a></div>
+      <div><a href="https://github.com/mimblewimble/docs/wiki/News-and-Channels#communities">Community Groups</a></div>
+      <div><a href="https://github.com/mimblewimble/docs/wiki/Events">Community Events</a></div>
+      <div><a href="page-contribution-howto">Improve this website</a></div>
+    </section>
+  </div>
+</footer>
+
+  </body>
+  <script>
+    var hamburger = document.querySelector(".hamburger");
+    var navMobile = document.querySelector(".nav-mobile");
+    var navMobileFade = document.querySelector(".nav-mobile-fade");
+    hamburger.addEventListener("click", function() {
+      hamburger.classList.toggle("is-active");
+      hamburger.classList.toggle("hamburger--slider");
+      navMobile.classList.toggle("is-active");
+      navMobileFade.classList.toggle("is-active");
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "\\[", right: "\\]", display: true },
+          { left: "$", right: "$", display: false },
+        ],
+        ignoredTags: [
+          "script", "noscript", "style", "textarea", "pre", "code",
+        ],
+      });
+      var nodes = document.querySelectorAll('script[type="math/tex; mode=display"]');
+      for (var i = 0; i < nodes.length; i++) {
+        var tex = nodes[i].innerHTML;
+        var markup = "<div class=\"equation\">" +
+          katex.renderToString(tex, { displayMode: true }) +
+          "</div>";
+        nodes[i].outerHTML = markup;
+      }
+    });
+  </script>
+</html>

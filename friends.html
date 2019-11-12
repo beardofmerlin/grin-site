@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <title>Grin</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- GoogleFonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS Main  -->
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+
+    <!-- Katex -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="" crossorigin="anonymous"></script>
+  </head>
+
+    <header class="container">
+      <nav>
+  <ul class="nav-logo">
+    <li><a href="https://grin-tech.org/">Grin</a></li>
+  </ul>
+  <ul class="nav-root">
+    <li>
+      <a href="https://github.com/mimblewimble/grin/releases">Releases</a>
+    </li>
+    <li>
+      <a href="https://github.com/mimblewimble/docs/wiki">Wiki</a>
+    </li>
+    <li>
+      <span class="dropdown" href="https://www.grin-forum.org/">
+        Community
+        <nav>
+          <span class="dropdown-heading">Everyone.</span>
+          <a href="https://grinnews.substack.com/">News</a>
+          <a href="https://www.grin-forum.org/">Forum</a>
+          <a href="https://gitter.im/grin_community/Lobby">Chat</a>
+        </nav>
+      </span>
+    </li>
+    <li>
+      <span class="dropdown" href="https://www.grin-forum.org/">
+        Guides
+        <nav>
+          <span class="dropdown-heading">Learn to use Grin</span>
+          <a href="https://github.com/mimblewimble/docs/wiki/how-to-run-a-grin-node">Running a node</code></a>
+          <a href="https://github.com/mimblewimble/docs/wiki/how-to-use-the-grin-wallet">Using the wallet</a>
+          <a href="https://github.com/mimblewimble/docs/wiki/how-to-mine-grin">Running a miner</a>
+        </nav>
+      </span>
+    </li>
+    <li>
+      <span class="dropdown" href="https://www.grin-forum.org/">
+        Learn more
+        <nav>
+          <span class="dropdown-heading">The Rabbit hole</span>
+          <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md">Grin Introduction</a>
+          <a href="https://github.com/mimblewimble/grin/blob/master/doc/pow/pow.md">Cuckoo cycle</a>
+          <a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md">Grin for Bitcoiners</a>
+          <a href="https://github.com/mimblewimble/docs/wiki/Grin-Privacy-Primer">Privacy in Grin</a>
+          <a href="https://github.com/mimblewimble/docs/wiki/Monetary-Policy">Monetary Policy</a>
+          <a href="https://github.com/mimblewimble/docs/wiki/Community-projects">Community projects</a>
+          <a href="funding.html">Community funding</a>
+          <a href="friends.html">Friends of Grin</a>
+        </nav>
+      </span>
+    </li>
+    <!-- <li><a href="/dev">Documentation</a></li> -->
+  </ul>
+  <ul class="nav-hamburger">
+    <button class="hamburger" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </ul>
+  <div>
+  </div>
+  <ul class="nav-mobile">
+    <div class="nav-mobile-fade">
+      <span class="nav-mobile-heading">Grin</span>
+      <li>
+        <a href="https://grin-tech.org/">Home</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md">Introduction</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/releases">Releases</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/docs/wiki">Wiki</a>
+      </li>
+      <li>
+        <a href="https://www.grin-forum.org/">Forum</a>
+      </li>
+      <span class="nav-mobile-heading">Guides</span>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/blob/master/doc/build.md">Setup Grin</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/grin-miner/blob/master/README.md">Setup Grin Miner</a>
+      </li>
+      <span class="nav-mobile-heading">Learn more</span>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md">Grin Introduction</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/blob/master/doc/pow/pow.md">Cuckoo cycle</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md">Grin for Bitcoiners</a>
+      </li>
+      <li>
+        <a href="https://grin-tech.org/friends">Friends of Grin</a>
+      </li>
+      <li>
+        <a href="https://github.com/mimblewimble/docs/wiki/Community-projects">Community projects</a>
+      </li>
+      <li>
+        <a href="https://grin-tech.org/funding">Community funding</a>
+      </li>
+    </div>
+  </ul>
+</nav>
+
+    </header>
+    <main class="main-root">
+  <h1>Friends of Grin</h1>
+<p>
+  The following companies, institutions, or individuals have generously donated
+  financial resources to the Grin project under our
+  <a href="https://grin-tech.org/funding">community funding model</a>. We're grateful for their
+  support, and are proud to display their logos or names as supporters of Grin.
+</p>
+
+<h2>Hall of Fame</h2>
+<p>
+  Please note: This section has just been introduced and is a <b><em>work in progress</em></b>.
+  Data to populate donation amounts is obtained from our recently created <a href="https://github.com/mimblewimble/grin-pm/blob/master/financials/income_log.csv">income log</a>.
+  We are trying to retroactively populate this log with your donations, but this might take us some time.
+  We welcome help from supporters and the wider community to achieve this.
+</p>
+<section id="leaderboard">
+  <div class="leaderboard-content">
+    <div class="leaderboard-row">
+      <div class="leaderboard-loading">
+      </div>
+    </div>
+    <br/>
+    <div class="leaderboard-row">
+      <div class="leaderboard-loading">
+      </div>
+    </div>
+    <br/>
+    <div class="leaderboard-row">
+      <div class="leaderboard-loading">
+      </div>
+    </div>
+    <br/>
+    <div class="leaderboard-row">
+      <div class="leaderboard-loading">
+      </div>
+    </div>
+    <br/>
+    <div class="leaderboard-row">
+      <div class="leaderboard-loading">
+      </div>
+    </div>
+  </div>
+</section>
+
+<h2>Companies</h2>
+<!-- Temporary black div until we convert to black on white logos -->
+<section class="companies">
+  <a href="https://www.bitonic.nl/">
+    <img src="logos/bitonic-white.png" title="Bitonic">
+  </a>
+  <a href="https://www.kryptonite1.co/">
+    <img src="logos/kr1_med.png" title="KR1">
+  </a>
+  <a href="https://www.tmgox.com/">
+    <img src="logos/tmgox-logo.jpg" title="KR1">
+  </a>
+  <a href="https://gpu.one/">
+    <img src="logos/gpuOne-white.png" title="GPU.one">
+  </a>
+  <a href="https://www.megapool.info/">
+    <img class="no-frame" src="logos/Mega-Pool-Logo-trans.png" title="Mega Pool">
+  </a>
+  <a href="https://www.grinmint.com/">
+    <img src="logos/grinmint_logo_square.svg" title="Grinmint by BlockCypher">
+  </a>
+  <a href="https://kyokan.io/">
+    <img src="logos/kyokan_teal_white.png" title="Kyokan">
+  </a>
+  <a href="http://innosilicon.com/">
+    <img src="logos/Innosilicon.png" title="Innosilicon">
+  </a>
+  <a href="https://galleon.exchange/">
+    <img src="logos/galleon.png" title="Galleon">
+  </a>
+  <a href="https://mining.luxor.tech/">
+    <img class="no-frame" src="logos/luxor_logo.png" title="Luxor">
+  </a>
+  <a href="https://beam-mw.com/">
+    <img src="logos/beam_logo.png" title="Beam">
+  </a>
+  <a href="https://continue.capital/">
+    <img src="logos/continuecapital.png" title="Continue Capital">
+  </a>
+  <a href="http://cyphercapital.net/">
+    <img src="logos/cypher_capital.png" title="Cypher Capital">
+  </a>
+  <a href="https://hashrabbit.co/">
+    <img src="logos/hashrabbit.png" title="Cypher Capital">
+  </a>
+  <a href="https://lemniscap.com/">
+    <img src="logos/lemniscap.png" title="Lemniscap">
+  </a>
+  <a href="#">
+    <img class="no-frame" src="logos/chanceventures.png" title="Chance Ventures">
+  </a>
+  <a href="https://www.wings.ai/">
+    <img class="no-frame" src="logos/wingsai-grey.png" title="Wings">
+  </a>
+  <a href="https://www.cgs.group/">
+    <img src="logos/cgs-logo-white.svg" title="CGS Group">
+  </a>
+  <a href="https://www.coingecko.com/en/coins/grin">
+    <img class="no-frame" src="logos/CoinGecko-WhiteText-small.png" title="CoinGecko">
+  </a>
+  <a href="https://hashoutliers.com/">
+    <img class="no-frame" src="logos/Outliers-256x.png" title="Outliers">
+  </a>
+  <a href="https://www.bhex.com/">
+    <img class="no-frame" src="logos/bhex-384x.png" title="Blue Helix Exchange(BHEX)">
+  </a>
+  <a href="https://www.sparkpool.com/">
+    <img class="no-frame" src="logos/Sparkpool-660x.png" title="SparkPool">
+  </a>
+  <a href="https://qtum.org/">
+    <img class="no-frame" src="logos/qtum.png" title="Qtum">
+  </a>
+  <a href="https://bit.fish/">
+    <img src="logos/bitfish.png" title="bitfish">
+  </a>
+  <a href="https://bminer.me/">
+    <img class="no-frame" src="logos/bminer-white-only.png" title="bminer">
+  </a>
+  <a href="https://prokapi.com/">
+    <img src="logos/prokapi-white.png" title="Prokapi">
+  </a>
+  <a href="https://hashtagchain.com/">
+    <img class="no-frame" src="logos/hashtag-capital.png" title="Hashtag Capital">
+  </a>
+  <a href="https://www.f2pool.com/">
+    <img src="logos/f2pool.png" title="F2Pool">
+  </a>
+  <a href="https://www.minerbabe.com/">
+    <img class="no-frame" src="logos/minerbabe-white.png" title="Minerbabe">
+  </a>
+  <a href="https://0301.farm/">
+    <img class="no-frame" src="logos/0301-transparent.png" title="0301 - Mining Farm">
+  </a>
+  <a href="https://2miners.com/">
+    <img class="no-frame" src="logos/logo-2miners-red.svg" title="2Miners">
+  </a>
+</section>
+
+<!-- TODO: add default profile image -->
+<article markdown="1" class="post-content">
+  <h2>Individuals</h2>
+  <em>In alphabetical order:</em><br/><br/>
+  <div class="individuals">
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Redouan Ahaloui</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Aurel</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Leonid Beder</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Roy Blankman</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Ivan Brightly</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Guy Corem</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Chance Du</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Adonis Ferreira</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Roderik van der Graaf</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Poseidon Ho</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Michalis Kargakis</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Baek Kyoum Kim</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Sehwan Kim (misskiwi)</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Mitchell Krawiec-Thayer Ph.D. (Isthmus)</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Jie Liu</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Jameson Lopp</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>juelianshana</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Chris McCann</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Jack Misteli Jean-Guillaume</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Bart Mol</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Yan Pritzker</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Hendrik Richter</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Niels de Ruiter</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Alex (X) Sherman</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Daisuke Shosaki</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Max Tannahill</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Aaron Ting</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Shaishav Todi</span>
+    </div>
+    <div class="individual">
+      <img src="grin-logo.png"/>
+      <span>Alexander Zaidelson</span>
+    </div>
+  </div>
+
+  <h2>Anonymous Supporters</h2>
+  <p>We'd also like to explicitly thank everyone who's donated to one of Grin's campaigns but chosen to remain
+    anonymous. We're working to protect that choice!</p>
+
+  <h2>Minimum amounts</h2>
+  <p>100 USD in crypto-equivalent in order to be listed in the individuals section, 1,000 USD in the companies section,
+    and 25,000 USD in the Hall of Fame.</p>
+
+  <h2>See something wrong?</h2>
+  <p>This page is a work in progress. We are doing our best to keep information up to date, but there's a good chance
+    bugs will slip in. For any corrections, please contact daniel.lehnberg@protonmail.com.</p>
+</article>
+
+
+<script crossorigin src="https://unpkg.com/papaparse@4.6.3/papaparse.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel">
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  function parseCsv(csv) {
+    // Use trimHeaders <5.0.0, and transformHeader >=5.0.0
+    return Papa.parse(csv, {
+      trimHeaders: true,
+      header: true,
+      skipEmptyLines: true,
+    }).data;
+  }
+
+  function parseDate(date) {
+    if (date) {
+      return date.substr(0, 4) + '-' + date.substr(4, 2) + '-' + date.substr(6, 2);
+    }
+    return '-';
+  }
+
+  const $leaderboard = document.getElementById('leaderboard');
+
+  function App() {
+    const [leaderboard, setLeaderboard] = React.useState([]);
+
+    // Url to .csv files
+    const incomeUrl = 'https://raw.githubusercontent.com/mimblewimble/grin-pm/master/financials/income_log.csv';
+    const entitiesUrl = '/assets/csv/entities.csv';
+    const miscUrl = 'https://raw.githubusercontent.com/mimblewimble/grin-pm/master/financials/misc_support.csv';
+
+    React.useEffect(() => {
+      // Fetch data on mount
+      Promise.all([
+        fetch(incomeUrl).then((res) => res.text()).then((res) => parseCsv(res)),
+        fetch(entitiesUrl).then((res) => res.text()).then((res) => parseCsv(res)),
+        fetch(miscUrl).then((res) =>  res.text()).then((res) =>  parseCsv(res)),
+      ]).then((res) => {
+        const donations = res[0];
+        const entities = res[1];
+        const misc = res[2];
+
+        // Append donations to the correct company/individual
+        donations.concat(misc).forEach((donation) => {
+          const index = entities.findIndex((o) => (o.name.toLowerCase() === donation.source.toLowerCase()));
+          try {
+            (entities[index].donations)
+            ? entities[index].donations.push(donation)
+            : entities[index].donations = [donation];
+          } catch (e) {
+            console.error('Missing entity in \`entities.csv\`: ' + donation.source);
+          }
+        });
+
+        // Add helper properties `total`, `numberOfDonations`, `lastDonation`
+        // that are displayed on leaderboard
+        return entities.map((o) => {
+          return Object.assign({}, o, {
+            total: (o.donations && o.donations.reduce((acc, cur) => acc + parseInt(cur.USD_equivalent), 0)) || 0,
+            numberOfDonations: (o.donations) ? o.donations.length : 0,
+            lastDonation: (o.donations) ? Math.max.apply(null, o.donations.map((d) => d.date)).toString() : null,
+          });
+          // Threshold for leaderboard is set here
+        }).filter((o) => o.total >= 25000).sort(function(a, b) { return a.total - b.total }).reverse().map(function(o, i) { o.rank = i + 1; return o; });
+      }).then((res) => {
+        if (res.length) {
+          setLeaderboard(res);
+        } else {
+          setLeaderboard([null]);
+        }
+      });
+    }, []);
+
+    return (
+      <React.Fragment>
+        {(leaderboard.length === 0)
+          ? <Loading />
+          : <Leaderboard leaderboard={leaderboard} />}
+      </React.Fragment>
+    );
+  }
+
+  function Loading() {
+    return (
+      <div className="leaderboard-content">
+        <div className="leaderboard-row">
+          <div className="leaderboard-loading">
+          </div>
+        </div>
+        <br/>
+        <div className="leaderboard-row">
+          <div className="leaderboard-loading">
+          </div>
+        </div>
+        <br/>
+        <div className="leaderboard-row">
+          <div className="leaderboard-loading">
+          </div>
+        </div>
+        <br/>
+        <div className="leaderboard-row">
+          <div className="leaderboard-loading">
+          </div>
+        </div>
+        <br/>
+        <div className="leaderboard-row">
+          <div className="leaderboard-loading">
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  function Leaderboard(props) {
+    const [itemsToShow, setItemsToShow] = React.useState(10);
+
+    return (
+      <React.Fragment>
+        <div className="leaderboard-content">
+          {(props.leaderboard[0] === null) ? (
+            Array.apply(null, Array(10)).map((_, i) => {
+              return (
+                <a key={i} className="empty" href="/funding">
+                  {i + 1}. Donate to take this spot!
+                </a>
+              );
+            })
+          ) : null}
+          {(props.leaderboard[0] !== null) ? (
+            props.leaderboard.slice(0, itemsToShow).map((data, i) => {
+              return (
+                <LeaderboardRow key={data.id} data={data} i={i} />
+              )
+            })
+          ) : null}
+          {(props.leaderboard[0] !== null && props.leaderboard.length < 10) ? (
+            Array.apply(null, Array(10 - props.leaderboard.length)).map((_, i) => {
+              return (
+                <a key={i} className="empty" href="/funding">
+                  {props.leaderboard.length + i + 1}. Donate to take this spot!
+                </a>
+              );
+            })
+          ) : null}
+        </div>
+        {(props.leaderboard.length > itemsToShow) ? (
+          <div className="friends-show-more">
+            <button
+              id="friends-show-more-btn"
+              onClick={function() { setItemsToShow(itemsToShow + 5); }}
+            >
+              Show more
+            </button>
+          </div>
+        ) : null}
+      </React.Fragment>
+    );
+
+    function LeaderboardRow(props) {
+      const [showDonations, setShowDonations] = React.useState(false);
+
+      return (
+        <div className="leaderboard-row">
+          <div className="header">
+            <div className="logo">
+              <a href={props.data.href}>
+                <img src={props.data.profile_src} />
+              </a>
+            </div>
+            <div className="header-info">
+              <span className="heading">
+                <span className="rank">{props.i + 1}. </span>
+                <a href={props.data.href}>{props.data.name}</a>
+              </span>
+              <span className="desc">{props.data.description}</span>
+            </div>
+          </div>
+          <div className="info">
+            <div className="data">
+              <span className="subheading">Total</span>
+              <span>{'$' + numberWithCommas(props.data.total)}</span>
+            </div>
+            <div className="data">
+              <span className="subheading"># donations</span>
+              <button
+                className="donation-number"
+                onClick={() => { setShowDonations(!showDonations); }}
+              >
+                {props.data.numberOfDonations}
+                {(props.data.donations)
+                  ? <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  : null}
+              </button>
+            </div>
+            <div className="data">
+              <span className="subheading">Last donation</span>
+              <span>{parseDate(props.data.lastDonation)}</span>
+            </div>
+          </div>
+          {(props.data.donations && showDonations) ? (
+            <div className="donations">
+              {props.data.donations.map((donation) => (
+                <div className="donation" key={donation.income_id + donation.source}>
+                  <strong>{'$' + numberWithCommas(parseInt(donation.USD_equivalent)) + ' '}</strong>
+                  ({donation.amount + ' ' + donation.currency}){': '}
+                  {(donation.url && donation.url !== '-') ? (
+                    <a href={donation.url}>{donation.comment}</a>
+                  ) : <span>{donation.comment}</span>}
+                </div>
+              ))}
+            </div>
+          ) : null}
+        </div>
+      );
+    }
+  }
+  ReactDOM.render(<App />, $leaderboard);
+</script>
+</main>
+
+    <footer>
+  <div class="footer-root container-sm">
+    <section class="footer-section" style="flex-grow: 0;">
+      <img src="grin_mw_logo.svg" class="grin-logo-footer" alt="Description">
+    </section>
+    <section class="footer-section">
+      <strong><h4>Grin</h4></strong>
+      <div><a href="https://github.com/mimblewimble/grin/releases">Github</a></div>
+      <div><a href="https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt">Original Whitepaper</a></div>
+      <div><a href="https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.pdf">Andrew Poelstra's Whitepaper</a></div>
+      <div><a href="https://github.com/mimblewimble/grin/blob/master/SECURITY.md">Security and vulnerability policy</a></div>
+      <div><a href="https://grin-tech.org/friends">Friends of Grin</a></div>
+      <div><a href="https://grin-tech.org/visual">Logos</a></div>
+    </section>
+    <section class="footer-section">
+      <strong><h4>The Rabbit hole</h4></strong>
+      <div><a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md">Grin Introduction</a></div>
+      <div><a href="https://github.com/mimblewimble/grin/blob/master/doc/pow/pow.md">Cuckoo cycle</a></div>
+      <div><a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md">Grin for Bitcoiners</a></div>
+    </section>
+    <section class="footer-section" style="flex-grow: 6;">
+      <strong><h4>Community</h4></strong>
+      <div><a href="https://gitter.im/grin_community/Lobby">Gitter</a></div>
+      <div><a href="https://grinnews.substack.com/">News</a></div>
+      <div><a href="https://www.grin-forum.org/">Forum</a></div>
+      <div><a href="https://twitter.com/grincouncil">Twitter</a></div>
+      <div><a href="https://launchpad.net/~mimblewimble">Mailing List</a></div>
+      <div><a href="https://github.com/mimblewimble/docs/wiki/News-and-Channels#communities">Community Groups</a></div>
+      <div><a href="https://github.com/mimblewimble/docs/wiki/Events">Community Events</a></div>
+      <div><a href="https://grin-tech.org/page-contribution-howto">Improve this website</a></div>
+    </section>
+  </div>
+</footer>
+
+  </body>
+  <script>
+    var hamburger = document.querySelector(".hamburger");
+    var navMobile = document.querySelector(".nav-mobile");
+    var navMobileFade = document.querySelector(".nav-mobile-fade");
+    hamburger.addEventListener("click", function() {
+      hamburger.classList.toggle("is-active");
+      hamburger.classList.toggle("hamburger--slider");
+      navMobile.classList.toggle("is-active");
+      navMobileFade.classList.toggle("is-active");
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "\\[", right: "\\]", display: true },
+          { left: "$", right: "$", display: false },
+        ],
+        ignoredTags: [
+          "script", "noscript", "style", "textarea", "pre", "code",
+        ],
+      });
+      var nodes = document.querySelectorAll('script[type="math/tex; mode=display"]');
+      for (var i = 0; i < nodes.length; i++) {
+        var tex = nodes[i].innerHTML;
+        var markup = "<div class=\"equation\">" +
+          katex.renderToString(tex, { displayMode: true }) +
+          "</div>";
+        nodes[i].outerHTML = markup;
+      }
+    });
+  </script>
+</html>
