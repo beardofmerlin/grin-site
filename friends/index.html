@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS Main  -->
-    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="../main.css"/>
 
     <!-- Katex -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="" crossorigin="anonymous">
@@ -70,8 +70,8 @@
           <a href="https://github.com/mimblewimble/docs/wiki/Grin-Privacy-Primer">Privacy in Grin</a>
           <a href="https://github.com/mimblewimble/docs/wiki/Monetary-Policy">Monetary Policy</a>
           <a href="https://github.com/mimblewimble/docs/wiki/Community-projects">Community projects</a>
-          <a href="funding.html">Community funding</a>
-          <a href="friends.html">Friends of Grin</a>
+          <a href="../funding/">Community funding</a>
+          <a href=".">Friends of Grin</a>
         </nav>
       </span>
     </li>
@@ -122,13 +122,13 @@
         <a href="https://github.com/mimblewimble/grin/blob/master/doc/grin4bitcoiners.md">Grin for Bitcoiners</a>
       </li>
       <li>
-        <a href="https://grin-tech.org/friends">Friends of Grin</a>
+        <a href=".">Friends of Grin</a>
       </li>
       <li>
         <a href="https://github.com/mimblewimble/docs/wiki/Community-projects">Community projects</a>
       </li>
       <li>
-        <a href="https://grin-tech.org/funding">Community funding</a>
+        <a href="../funding/">Community funding</a>
       </li>
     </div>
   </ul>
@@ -140,7 +140,7 @@
 <p>
   The following companies, institutions, or individuals have generously donated
   financial resources to the Grin project under our
-  <a href="https://grin-tech.org/funding">community funding model</a>. We're grateful for their
+  <a href="../funding/">community funding model</a>. We're grateful for their
   support, and are proud to display their logos or names as supporters of Grin.
 </p>
 
@@ -543,7 +543,7 @@
           {(props.leaderboard[0] === null) ? (
             Array.apply(null, Array(10)).map((_, i) => {
               return (
-                <a key={i} className="empty" href="/funding">
+                <a key={i} className="empty" href="../funding/">
                   {i + 1}. Donate to take this spot!
                 </a>
               );
@@ -559,7 +559,7 @@
           {(props.leaderboard[0] !== null && props.leaderboard.length < 10) ? (
             Array.apply(null, Array(10 - props.leaderboard.length)).map((_, i) => {
               return (
-                <a key={i} className="empty" href="/funding">
+                <a key={i} className="empty" href="../funding/">
                   {props.leaderboard.length + i + 1}. Donate to take this spot!
                 </a>
               );
@@ -652,8 +652,8 @@
       <div><a href="https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt">Original Whitepaper</a></div>
       <div><a href="https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.pdf">Andrew Poelstra's Whitepaper</a></div>
       <div><a href="https://github.com/mimblewimble/grin/blob/master/SECURITY.md">Security and vulnerability policy</a></div>
-      <div><a href="https://grin-tech.org/friends">Friends of Grin</a></div>
-      <div><a href="https://grin-tech.org/visual">Logos</a></div>
+      <div><a href=".">Friends of Grin</a></div>
+      <div><a href="#">Logos</a></div>
     </section>
     <section class="footer-section">
       <strong><h4>The Rabbit hole</h4></strong>
@@ -670,7 +670,7 @@
       <div><a href="https://launchpad.net/~mimblewimble">Mailing List</a></div>
       <div><a href="https://github.com/mimblewimble/docs/wiki/News-and-Channels#communities">Community Groups</a></div>
       <div><a href="https://github.com/mimblewimble/docs/wiki/Events">Community Events</a></div>
-      <div><a href="https://grin-tech.org/page-contribution-howto">Improve this website</a></div>
+      <div><a href="#">Improve this website</a></div>
     </section>
   </div>
 </footer>
